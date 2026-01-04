@@ -1,0 +1,9 @@
+{
+  "key": "MUX",
+  "title": "Mux (System Video Module)",
+  "subtitle": "Placeholder module for system-video generation.",
+  "cards": [
+    { "title": "Vision", "body": "You don’t watch content videos. You watch system videos generated from app activity." },
+    { "title": "Privacy", "body": "Render patterns, not raw private logs." }
+  ]
+}
