@@ -1,0 +1,43 @@
+<div class="topbar">
+  <div class="brand">
+    <div class="dot"></div>
+    <div class="name">MindsEye / Enclosed OS</div>
+    <div class="mode">offline · python-engine</div>
+  </div>
+
+  <div class="actions">
+    <button class="btn ghost" id="btnShuffle">shuffle</button>
+    <button class="btn ghost" id="btnReset">reset</button>
+    <button class="btn" id="btnHome">home</button>
+  </div>
+</div>
+
+<div class="layout">
+  <section class="stage">
+    <div class="stageHead">
+      <div class="title">Grid Navigator</div>
+      <div class="sub">Tap adjacent tiles to move. Hash routes: #/LEDGER #/MUX etc.</div>
+    </div>
+
+    <div id="grid" class="grid"></div>
+
+    <div class="stageFoot">
+      <div class="pill">Empty: <span id="emptySlot">—</span></div>
+      <div class="pill">Moves: <span id="moves">0</span></div>
+      <div class="pill">Active: <span id="active">HOME</span></div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="panelHead">
+      <div class="panelTitle" id="panelTitle">HOME</div>
+      <div class="panelSub" id="panelSub">Website shell + OS laws.</div>
+    </div>
+
+    <div class="panelBody">
+      <div class="cards" id="cards"></div>
+    </div>
+  </section>
+</div>
+
+<div class="toast" id="toast"></div>
