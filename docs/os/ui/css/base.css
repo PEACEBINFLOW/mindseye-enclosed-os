@@ -1,0 +1,41 @@
+:root{
+  --bg:#06070b;
+  --panel:rgba(255,255,255,0.05);
+  --line:rgba(255,255,255,0.12);
+  --txt:rgba(255,255,255,0.92);
+  --muted:rgba(255,255,255,0.6);
+  --glow:rgba(120,180,255,0.40);
+  --hot:rgba(255,140,200,0.25);
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;
+  background:
+    radial-gradient(900px 600px at 70% 20%, rgba(80,160,255,0.16), transparent),
+    radial-gradient(900px 600px at 20% 70%, rgba(255,120,200,0.10), transparent),
+    var(--bg);
+  color:var(--txt);
+}
+
+.kbd{
+  display:inline-block;
+  padding:2px 8px;
+  border:1px solid rgba(255,255,255,0.14);
+  border-radius:999px;
+  background:rgba(255,255,255,0.04);
+  color:rgba(255,255,255,0.85);
+  font-size:12px;
+}
+
+.btn{
+  border:1px solid var(--line);
+  background:rgba(255,255,255,0.09);
+  color:var(--txt);
+  padding:8px 12px;
+  border-radius:14px;
+  cursor:pointer;
+}
+.btn.ghost{background:rgba(255,255,255,0.03)}
