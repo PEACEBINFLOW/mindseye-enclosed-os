@@ -1,0 +1,49 @@
+.splash{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:flex-start;
+  padding:32px 18px;
+  gap:10px;
+  max-width:980px;
+  margin:0 auto;
+}
+
+.splashTitle{
+  font-size:20px;
+  letter-spacing:0.6px;
+}
+.splashSub{
+  color:var(--muted);
+  font-size:12px;
+}
+.splashStatus{
+  margin-top:18px;
+  padding:10px 12px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,0.12);
+  background:rgba(0,0,0,0.40);
+  color:rgba(255,255,255,0.85);
+}
+.splashHint{
+  margin-top:8px;
+  color:rgba(255,255,255,0.70);
+  font-size:12px;
+}
+
+.toast{
+  position:fixed;
+  left:50%;
+  bottom:18px;
+  transform:translateX(-50%);
+  padding:10px 12px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,0.12);
+  background:rgba(0,0,0,0.40);
+  color:rgba(255,255,255,0.85);
+  opacity:0;
+  pointer-events:none;
+  transition: opacity 160ms ease;
+}
+.toast.show{opacity:1}
