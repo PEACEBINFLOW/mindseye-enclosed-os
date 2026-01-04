@@ -3,73 +3,25 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>MindsEye — Enclosed OS</title>
+  <title>MindsEye / Enclosed OS</title>
+
   <link rel="manifest" href="./manifest.json">
-  <link rel="stylesheet" href="./assets/css/ui.css"/>
+  <link rel="stylesheet" href="./os/ui/css/base.css">
+  <link rel="stylesheet" href="./os/ui/css/grid.css">
+  <link rel="stylesheet" href="./os/ui/css/panel.css">
+  <link rel="stylesheet" href="./os/ui/css/effects.css">
 </head>
 
 <body>
-  <div class="topbar">
-    <div class="brand">
-      <div class="dot"></div>
-      <div class="name">MindsEye / Enclosed OS</div>
-      <div class="mode" id="mode">offline · python-engine</div>
+  <main id="app">
+    <div class="splash" id="splash">
+      <div class="splashTitle">MindsEye / Enclosed OS</div>
+      <div class="splashSub">offline · website-shell · python-engine</div>
+      <div class="splashStatus" id="status">Booting…</div>
     </div>
+  </main>
 
-    <div class="actions">
-      <button class="btn ghost" id="btnShuffle">shuffle</button>
-      <button class="btn ghost" id="btnReset">reset</button>
-      <button class="btn" id="btnHome">home</button>
-    </div>
-  </div>
-
-  <div class="layout">
-    <section class="stage">
-      <div class="stageHead">
-        <div class="title">Grid Navigator</div>
-        <div class="sub">Tap a tile adjacent to the empty slot to move. Tiles are “apps”.</div>
-      </div>
-
-      <div id="grid" class="grid" aria-label="navigator grid"></div>
-
-      <div class="stageFoot">
-        <div class="pill">Empty slot: <span id="emptySlot">—</span></div>
-        <div class="pill">Moves: <span id="moves">0</span></div>
-        <div class="pill">Active: <span id="active">HOME</span></div>
-      </div>
-    </section>
-
-    <section class="panel">
-      <div class="panelHead">
-        <div class="panelTitle" id="panelTitle">HOME</div>
-        <div class="panelSub" id="panelSub">A Web2-style interactive document system. No backend. No API.</div>
-      </div>
-
-      <div class="panelBody" id="panelBody">
-        <div class="hero">
-          <div class="heroTitle">Welcome to the enclosed MindsEye OS.</div>
-          <div class="heroText">
-            This is a self-contained interactive system: tiles = apps, movement = navigation, content = worlds.
-            It behaves like an Android launcher fused with a puzzle engine.
-          </div>
-          <div class="heroText muted">
-            Everything runs locally in your browser. The engine is Python (Pyodide).
-          </div>
-        </div>
-
-        <div class="cards" id="cards"></div>
-      </div>
-    </section>
-  </div>
-
-  <div class="toast" id="toast">Loading Python engine…</div>
-
-  <!-- Pyodide loader -->
-  <script src="https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"></script>
-  <script type="module" src="./assets/js/boot.js"></script>
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.25.1/full/pyodide.js"></script>
+  <script type="module" src="./os/router/router.js"></script>
 </body>
 </html>
-
-<script src="https://cdn.jsdelivr.net/pyodide/v0.25.1/full/pyodide.js"></script>
-<script src="assets/js/boot.js"></script>
-
