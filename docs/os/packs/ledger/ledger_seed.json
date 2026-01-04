@@ -1,0 +1,7 @@
+{
+  "seed_version": 1,
+  "events": [
+    { "ts": 1, "type": "BOOT", "msg": "enclosed_os_started" },
+    { "ts": 2, "type": "ROUTE", "msg": "HOME" }
+  ]
+}
