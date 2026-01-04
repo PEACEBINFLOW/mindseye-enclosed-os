@@ -1,0 +1,24 @@
+{
+  "default": "HOME",
+  "routes": [
+    "HOME",
+    "LEDGER",
+    "HUNTS",
+    "POLICY",
+    "OUTCOME",
+    "FLOW",
+    "STATES",
+    "SEARCH",
+    "TRACE",
+    "MUX",
+    "SYSTEM",
+    "LAW_T",
+    "LAW_N",
+    "MINDSCRIPT",
+    "FABRIC",
+    "EXPLORER",
+    "ANOMALY",
+    "ACTIONS",
+    "ABOUT"
+  ]
+}
