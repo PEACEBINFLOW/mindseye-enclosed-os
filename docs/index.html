@@ -14,14 +14,19 @@
 
 <body>
   <main id="app">
+    <!-- Router will swap splash -> shell -->
     <div class="splash" id="splash">
       <div class="splashTitle">MindsEye / Enclosed OS</div>
       <div class="splashSub">offline · website-shell · python-engine</div>
       <div class="splashStatus" id="status">Booting…</div>
+      <div class="splashHint">Tip: use URL routes like <span class="kbd">#/LEDGER</span> <span class="kbd">#/MUX</span></div>
     </div>
   </main>
 
+  <!-- Pyodide (Python runtime in browser) -->
   <script src="https://cdn.jsdelivr.net/pyodide/v0.25.1/full/pyodide.js"></script>
+
+  <!-- Router entry -->
   <script type="module" src="./os/router/router.js"></script>
 </body>
 </html>
