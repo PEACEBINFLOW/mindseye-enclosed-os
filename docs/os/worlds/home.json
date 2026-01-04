@@ -1,0 +1,9 @@
+{
+  "key": "HOME",
+  "title": "MindsEye Enclosed OS",
+  "subtitle": "Offline interactive system-document. No backend. No API.",
+  "cards": [
+    { "title": "What this is", "body": "A self-contained OS-like interface. Sliding grid movement is navigation." },
+    { "title": "Why it exists", "body": "Simulate future system-video / app streams without exposing private user data." }
+  ]
+}
