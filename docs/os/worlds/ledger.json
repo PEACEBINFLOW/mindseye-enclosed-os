@@ -1,0 +1,9 @@
+{
+  "key": "LEDGER",
+  "title": "Ledger (Offline Pack)",
+  "subtitle": "Append-only memory simulation (seed pack).",
+  "cards": [
+    { "title": "Rule", "body": "No overwrites. Only append." },
+    { "title": "Seed", "body": "This demo ships with local seed pack: /os/packs/ledger/ledger_seed.json" }
+  ]
+}
