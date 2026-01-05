@@ -1,0 +1,9 @@
+/* Legacy UI styles (deprecated)
+   Replaced by /docs/os/ui/css/*
+*/
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: monospace;
+}
